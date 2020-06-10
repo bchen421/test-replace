@@ -49,9 +49,5 @@ resource "aws_db_instance" "postgres" {
     sr_region = var.sr_region
     sr_org    = var.sr_org
   }
-
-  lifecycle {
-    create_before_destroy = false
-  }
 }
 
