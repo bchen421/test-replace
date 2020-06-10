@@ -30,7 +30,6 @@ resource "aws_db_instance" "resourcedb" {
   deletion_protection         = false
 
   #snapshot_identifier = var.postgres-snapshot
-  snapshot_identifier = "arn:aws:rds:us-east-1:939611729628:snapshot:rein-postgres-prod-db-restore-2020-05-25"
   snapshot_identifier = "${var.postgres-snapshot}"
 
   iam_database_authentication_enabled = true
